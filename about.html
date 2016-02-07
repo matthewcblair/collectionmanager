@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <br><br><br>
+    <center><img src="collection_logo.png"></center><br><hr>
+    <div class="container">
+    <h1 style="float:left">About</h1><h2 style="float:right"><a href="http://lollookup.com/index.php">Home</a></h2><br><br><br>
+    <hr>
+    <h3>General Usage</h3>
+    <p>This website serves a simple purpose: sort a Discogs record collection by the Notes field. Particularly, it looks at the Notes field, looks for a dollar value, and assigns the dollar value to a record. When all of the records have been assigned a dollar value, they are sorted by their values.  
+    <br><br>By default, the first 25 records are displayed in the table. The next page of records can be viewed by navigating to the bottom of the table and changing the value in the 'Page' field, then clicking submit. The number of records displayed per page can also be changed in the 'Per Page' field.
+    <br><br>When the hompage is loaded, the collection will be (by default) sorted by the Notes field. i.e. The most valuable records will be listed first. The records can also be sorted by Date Added. This is accomplished by ticking the 'Sort by Date Added' box at the bottom of the table. Then click submit.
+    </p><br>
+    <h3>Updating the Collection</h3>
+    <p>When you view your collection on <i>lollookup.com</i>, you are viewing static data (a snapshot). That is to say, when changes are made to your collection on <i>discogs.com</i>, those changes are not (automatically) realized on <i>lollookup.com</i>. In fact, no changes can be made to your Discogs record collection on this website. This website is just for viewing your collection in a way that Discogs has not implemented.
+    <br><br>However, once you have made changes to your collection on <i>discogs.com</i> you can update this website's static data (take a new snapshot). This is accomplished by <b>clicking the 'Update Collection' link at the top of the page.</b>
+    </p><br>
+    <h3>Known Bugs and Caveats (Important)</h3>
+    <p> - The preferred format for assigning a value to a record (when you are adding a new record on <i>discogs.com</i>) is as follows: <b>$10 - Your Notes Here</b>
+    <br>The dollar sign ($) is important, and the dash (-) is important. Using this format will ensure that the note parser will read the correct value for the record.
+    <br><br> - When updating your collection (adding new records) on <i>discogs.com</i>, <b>please</b> input a value for <i>all</i> of the record's fields. e.g. Assign values for: the Media Condition, the Sleeve Condition, and the Notes field.
+    <br><br> - <strike>(<b>Caveat that could be fixed in the future</b>) When an update is made (Update Collection link is pressed), this website does not look for changes made to records that are already in its database. It only looks for new records that have been added to the collection on <i>discogs.com</i>. That is to say, once the record is added to this website's database, its Note field will never change, even if that record's Note field is changed on <i>discogs.com</i> .</strike> If changes have been made to the Discogs Record Collection (e.g. updated notes or removed particular records), the <i>lollookup.com</i> database can be updated (synced) by visiting <a href="sync_collection.php">this link</a>. <b>Warning</b>: The Discogs devloper API only allows for 100 records to be requested per API call, meaning that (at the time of this writing) 13 API calls will be made when that link is visited. That will take some time, but if you wait you'll eventually be lead to a page that will display any changes that were made in order to sync the database to the Discogs record colleciton. 
+    </p><br>
+    <h3>About the Developer: <b>Matthew Blair - matthew.blair@ttu.edu</b></h3>
+    I am studying Computer Science at Texas Tech University in Lubbock, Texas. I can be reached most viably by the email listed above. This website was developed over a couple of weekends for my dad's birthday (Chuck from Chuck's Record Collection!). <b>Happy birthday, Dad!</b>
+     
+    <hr><br><br><br>
+</div>
+
+</body>
+
+</html>
